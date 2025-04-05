@@ -1,0 +1,14 @@
+public class TryCatchFinally {
+    public static void main(String[] args) {
+        String text = "abc";
+
+        try {
+            int number = Integer.parseInt(text);
+            System.out.println("Converted number: " + number);
+        } catch (NumberFormatException e) {
+            System.out.println("Exception: Invalid number format.");
+        } finally {
+            System.out.println("This block always runs.");
+        }
+    }
+}
