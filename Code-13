@@ -1,0 +1,15 @@
+
+interface Greeting {
+    void sayHello();
+}
+class EnglishGreeting implements Greeting {
+    public void sayHello() {
+        System.out.println("Hello!");
+    }
+}
+public class InterfaceExample {
+    public static void main(String[] args) {
+        Greeting greet = new EnglishGreeting();
+        g.sayHello();
+    }
+}
