@@ -1,0 +1,14 @@
+
+abstract Parent  {
+    abstract void sound();
+}
+class Parents extends child  {
+    void sound() {
+        System.out.println("child cry ");
+    }
+}
+public class AbstractExample {
+    public static void main(String[] args) {
+        Parent  a = new child (); 
+    }
+}
