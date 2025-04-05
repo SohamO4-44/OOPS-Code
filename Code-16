@@ -1,0 +1,15 @@
+public class MarksCalculator {
+    public static void main(String[] args) {
+    
+        int DSD = 85;
+        int OOPS = 90;
+        int CMOS = 78;
+        int FLIC = 88;
+        int ENG = 92;
+        int totalMarks = DSD + OOPS + CMOS + FLIC+ ENG;
+
+        double averageMarks = totalMarks / 5.0;
+        System.out.println("Total Marks: " + totalMarks);
+        System.out.println("Average Marks: " + averageMarks);
+    }
+}
