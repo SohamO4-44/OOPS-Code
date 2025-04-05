@@ -1,0 +1,14 @@
+
+final class Final
+    final String message = "This is a final message.";
+    final void showMessage() {
+        System.out.println(message);
+    }
+}
+
+public class FinalKeywordExample {
+    public static void main(String[] args) {
+        FinalClass obj = new FinalClass();
+        obj.showMessage();
+    }
+}
