@@ -1,0 +1,20 @@
+class Parent 
+    void {
+        System.out.println();
+    }
+}
+
+class Child extends Parent {
+    String message = "Hello from Child class";
+
+    void showMessages() {
+        System.out.println(super.message);
+        super.displayMessage();
+    }
+}
+
+public class SuperKeywordExample {
+    public static void main(String[] args) {
+        Child obj = new Child();
+    }
+}
