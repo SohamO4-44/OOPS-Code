@@ -1,0 +1,13 @@
+public class ThrowThrows{
+    public static void checkValue() throws ArithmeticException {
+        throw new ArithmeticException("Custom exception thrown");
+    }
+
+    public static void main(String[] args) {
+        try {
+            checkValue();
+        } catch (ArithmeticException e) {
+            System.out.println("Caught exception: " + e.getMessage());
+        }
+    }
+}
