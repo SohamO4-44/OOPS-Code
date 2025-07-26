@@ -1,0 +1,39 @@
+import java.util.*;
+public class main{
+public static void main(String[] args) {
+Scanner sc new Scanner(ystem.in);
+LinkedList<string> ecs new LinkedList<>();
+
+Systm.out.println("Enter the number of elements:");
+int n = sc.nextInt();
+sc.nextLine();
+
+System.out.println("Enter"+n+"elements:");
+for (int i=0;i<n;i++);
+Sing input= sc.nextiine();
+ecs.add(Input);
+
+system.out.println("Your LinkedList");
+system.out.println(ecs);
+Your LinkedList: [a, b, c, d)
+finished sith axit code 0
+System.out.println("Your LinkedList");
+System.out.println("want to remove something?");
+System.out.println("1 for yes and 2 for no");
+Int y=sc.nextInt();
+sc.nextLine();
+if(y=1){
+System.out.println("write the element");
+String value sc.nextLine();
+
+ecs.remove(value);
+
+else if (y=2)(
+System.out.println("okay");
+else{
+.out.println("wrong selection");
+Syst.out.println("Your LinkedList: ");
+46
+ecs.printlist
+47
+sc.close():
