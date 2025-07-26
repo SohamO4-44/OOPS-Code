@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class CarInfo {
+    public static void main(String[] args) {
+        ArrayList<String> carTypes = new ArrayList<>();
+        carTypes.add("suv");
+        carTypes.add("sedan");
+        carTypes.add("mpv");
+        carTypes.add("hatchback");
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the type of car (suv, sedan, mpv, hatchback): ");
+        String inputType = scanner.nextLine().toLowerCase();
+
+        if (carTypes.contains(inputType)) {
+            if (inputType.equals("suv")) {
+                System.out.println("4");
+                System.out.println("2500");
+            } else if (inputType.equals("sedan")) {
+                System.out.println("4");
+                System.out.println("1800");
+            } else if (inputType.equals("mpv")) {
+                System.out.println("4");
+                System.out.println("2200");
+            } else if (inputType.equals("hatchback")) {
+                System.out.println("4");
+                System.out.println("1400");
+            }
+        } else {
+            System.out.println("Invalid car type entered.");
+        }
+
+        scanner.close();
+    }
+}
