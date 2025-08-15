@@ -1,0 +1,44 @@
+import java.util.*;
+public class Main {
+    public static final int max = 4;
+    public static int[] arr = new int[max];
+    public static int R = -1;
+    public static int F = -1;
+
+    public void enqueuent(int data) {
+        if (R == max - 1) {
+            System.out.println("  ");
+            System.out.println("overflow");
+            return;
+        } else {
+            R++;
+        }
+        arr[R] = data;
+        System.out.println("Added to Queue: " + data);
+        return;
+    }
+
+    public void dequeuent(int data) {
+        if ((R == -1 && F == -1 )||F<=R) {
+            System.out.println("  ");
+            System.out.println("Underflow Queue");
+            return;
+        } else {
+            F++;
+            System.out.println("REMOVE FROM Queue: " + data);
+        }
+    }
+
+    public static void main(String[] args) {
+        Main q = new Main();
+        q.enqueuent(10);
+        q.enqueuent(20);
+        q.enqueuent(30);
+        q.enqueuent(40);
+        for(int i=0;i<max;i++){
+            System.out.print(arr[i]);
+        }
+        q.enqueuent(10);
+        q.dequeuent(10);
+    }
+}
