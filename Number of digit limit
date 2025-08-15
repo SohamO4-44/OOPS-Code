@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class DigitLimitChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        String input = scanner.nextLine();
+
+        if (input.startsWith("-") || input.startsWith("+")) {
+            input = input.substring(1);
+        }
+
+        if (input.matches("\\d+")) {
+            if (input.length() <= 6) {
+                System.out.println("Valid input: " + input);
+            } else {
+                System.out.println("Error: Number has more than 6 digits.");
+            }
+        } else {
+            System.out.println("Invalid input: Not a number.");
+        }
+
+        scanner.close();
+    }
+}
